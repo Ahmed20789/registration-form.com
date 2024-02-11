@@ -1,33 +1,108 @@
-<html>
-  <head>
-    <title>Registration form</title>    
-  </head>
-  <body>
-    <label>Enter Your Full Name:</label><br>
-    <input type= "text"/><br>
-    <label>Enter You Valid Email</label><br>
-    <input type= "email"/><br>
-    <label>Enter a Strong Password :</label><br>
-    <input type= "password"/><br>
-    <label>Please Select Your Gender:</label><br>
-    <input type= "radio"name="gender"/>Male<br>
-    <input type= "radio"name="gender"/>Female<br>
-    <input type= "radio"name="gender"/>Others<br>
-    <label>Enter Your Address:</label><br>
-    <textarea></textarea><br>
-    <input type= "submit"value="Sign Up"/>
-    <input type= "reset"value="Reset"/>
-    <p>Already have an account?<a href="login.html">Login</a></p>
-    <p>Forgot Password?<a href="forgot.html">Click Here</a></p>
-    <p>Want to know more about us?<a href="about.html">Click Here</a></p>
-    <p>Want to know more about us?<a href="contact.html">Click Here</a></p>
-    <p>Want to know more about us?<a href="index.html">Click Here</a></p><br>
-  </body>
-  <footer>
-    <p>Copyright &copy; 2024 Ahmed Ragab. All rights reserved.</p>
-    <p>Email: <a href="mailto:bigbrainahmed@gmail.com">bigbrainahmed@gmail.com</\
-      <p>Phone: <a href="tel:+971547990823">0547990823</a></
-        <p>Follow us on: <a href="https://www.facebook.com/Ahmed Ragab Ahmed">Facebook</
-          <p>Follow us on: <a href="https://www.instagram.com/ahmedragab1360">Instagram</a></p>
-          <p>Follow us on: <a href="https://www.twitter.com/Ahmed Ragab A
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<h2>Registration Form</h2></br>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="name">Enter Your Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Enter You Valid Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Enter a Strong Password :</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label>Please Select Your Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="others" name="gender" value="others">
+            <label for="others">Others</label>
+            
+            <label for="address">Enter Your Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+            
+            <input type="submit" value="Sign Up">
+            <input type="reset" value="Reset">
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+        <p>Forgot Password? <a href="forgot.html">Click Here</a></p>
+        <p>Want to know more about us? <a href="about.html">Click Here</a></p>
+        <p>Want to know more about us? <a href="contact.html">Click Here</a></p>
+        <p>Want to know more about us? <a href="index.html">Click Here</a></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ahmed Ragab. All rights reserved.</p>
+        <p>Email: <a href="mailto:bigbrainahmed
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* Add this line */
+    max-height: 400px; /* Add this line */
+}
